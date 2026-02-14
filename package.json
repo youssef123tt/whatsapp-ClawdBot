@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp-clawdbot",
+  "version": "1.0.0",
+  "description": "WhatsApp ClawdBot - AI-powered WhatsApp assistant",
+  "main": "mcp_server/whatsapp_bridge.js",
+  "scripts": {
+    "start": "node mcp_server/whatsapp_bridge.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "claude",
+    "ai",
+    "chatbot",
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,28 @@
+# WhatsApp ClawdBot Dependencies
+
+# Core
+python-dotenv>=1.0.0
+
+# Google Gemini
+google-generativeai>=0.3.0
+
+# Anthropic Claude (Removed)
+# anthropic>=0.18.0
+
+# MCP
+mcp>=0.9.0
+
+# Vector Database & Embeddings
+chromadb>=0.4.22
+voyageai>=0.2.0  # Optional, for better embeddings
+
+# Scheduling
+APScheduler>=3.10.0
+SQLAlchemy>=2.0.0
+
+# WhatsApp (Node.js bridge dependencies listed separately)
+# See package.json for Node.js dependencies
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3

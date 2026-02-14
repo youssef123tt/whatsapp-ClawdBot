@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  whatsapp-clawdbot:
+    build: .
+    container_name: whatsapp-clawdbot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Persist WhatsApp session (so you don't re-scan QR on restart)
+      - ./session:/app/session
+      # Persist vector database
+      - ./chroma_db:/app/chroma_db
+      # Persist scheduler database
+      - ./scheduler.db:/app/scheduler.db
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true

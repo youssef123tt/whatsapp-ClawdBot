@@ -1,0 +1,43 @@
+# Environment variables (contains API keys, phone numbers)
+.env
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+
+# WhatsApp session data (contains auth tokens — NEVER commit)
+session/
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Database files
+*.db
+*.sqlite3
+
+# ChromaDB data
+chroma_data/
+chroma_db/
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
